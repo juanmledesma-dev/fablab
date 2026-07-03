@@ -232,10 +232,12 @@ color:#cbd5e1;
 /* ===== BLOG IMAGE PREVIEW (SIN ZOOM, CON EXPANSIÓN REAL) ===== */
 
 .blog-image{
-position:relative;
-display: flex;
-align-items: center;
-justify-content: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;      /* Espacio entre imágenes */
+    flex-wrap: wrap; /* Si no caben, pasan a la siguiente línea */
 }
 
 .blog-image img{
