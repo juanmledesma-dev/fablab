@@ -242,8 +242,9 @@ color:#cbd5e1;
 
 .blog-image img{
     width: 45%;
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
+    object-fit: cover;
     display: block;
 }
 
