@@ -100,9 +100,17 @@
 <div class="section-box">
 <h2>📌 Phase 1 - Research of User Needs (Jacqueline Mayancela)</h2>
 
-<p>The first phase focused on identifying the needs of people with visual impairment. A QFD matrix was developed to relate user requirements with technical characteristics such as sensor range, vibration intensity, comfort, weight, battery life and ergonomic design.</p>
+<p>
+The first phase consisted of identifying the main mobility needs of people with visual impairment. For this purpose, a QFD matrix was developed to connect user requirements with technical characteristics of the product.
+</p>
 
-<p>The QFD analysis established the priorities that guided the entire development process.</p>
+<p>
+The analysis considered important aspects such as obstacle detection range, vibration intensity, wristband comfort, device weight, battery autonomy, component distribution and ergonomic design.
+</p>
+
+<p>
+This phase allowed the team to define the most relevant design priorities before starting the physical and electronic development of the smart wristband.
+</p>
 
 <div class="blog-image">
     <img src="../image/final-1.png" >
@@ -115,11 +123,19 @@
 
 <div class="section-box">
 
-<h2>✏️ Phase 2 - Initial Sketches and Concept Development (Jacqueline Mayancela / Mateo Ledesma)</h2>
+<h2>📌 Phase 1 - Research of User Needs (Jacqueline Mayancela)</h2>
 
-<p>Several design concepts were produced to evaluate dimensions, ergonomics, component placement and ease of assembly.</p>
+<p>
+The first phase consisted of identifying the main mobility needs of people with visual impairment. For this purpose, a QFD matrix was developed to connect user requirements with technical characteristics of the product.
+</p>
 
-<p>The sketches made it possible to determine the best location for the ultrasonic sensor, PCB, vibration motor and battery before beginning the CAD design.</p>
+<p>
+The analysis considered important aspects such as obstacle detection range, vibration intensity, wristband comfort, device weight, battery autonomy, component distribution and ergonomic design.
+</p>
+
+<p>
+This phase allowed the team to define the most relevant design priorities before starting the physical and electronic development of the smart wristband.
+</p>
 
 <div class="blog-image">
     <img src="../image/final-3.png" >
@@ -131,12 +147,19 @@
 
 <div class="section-box">
 
-<h2>🔌 Phase 3 - Breadboard Testing (Mateo Ledesma)</h2>
+<h2>📌 Phase 1 - Research of User Needs (Jacqueline Mayancela)</h2>
 
-<p>Before manufacturing the PCB, the electronic circuit was assembled on a breadboard to verify sensor readings, vibration activation and power stability.</p>
+<p>
+The first phase consisted of identifying the main mobility needs of people with visual impairment. For this purpose, a QFD matrix was developed to connect user requirements with technical characteristics of the product.
+</p>
 
-<p>This stage allowed wiring mistakes and polarity issues to be corrected before producing the final circuit board.</p>
+<p>
+The analysis considered important aspects such as obstacle detection range, vibration intensity, wristband comfort, device weight, battery autonomy, component distribution and ergonomic design.
+</p>
 
+<p>
+This phase allowed the team to define the most relevant design priorities before starting the physical and electronic development of the smart wristband.
+</p>
 <div class="blog-image">
     <img src="../image/final-5.png" >
 
@@ -147,9 +170,19 @@
 
 <div class="section-box">
 
-<h2>💻 Phase 4 - Programming and Code Development (Mateo Ledesma) </h2>
+<h2>💻 Phase 4 - Programming and Code Development (Mateo Ledesma)</h2>
 
-<p>The software was programmed using Arduino IDE. The ESP32 continuously measures the obstacle distance and activates the vibration motor whenever the detected object is within the predefined safety distance.</p>
+<p>
+The programming phase was carried out using Arduino IDE and a USB-C cable to upload the code to the XIAO ESP32-C3 microcontroller.
+</p>
+
+<p>
+The code was developed to continuously read the distance values from the HC-SR04 ultrasonic sensor. When an obstacle was detected within the defined safety range, the microcontroller sent a signal to activate the vibration motor.
+</p>
+
+<p>
+Several tests were performed to adjust the detection distance, improve the response time and verify that the vibration alert worked correctly. This phase allowed the electronic system to respond automatically to nearby obstacles.
+</p>
 
 <div class="blog-image">
     <img src="../image/final-7.png" >
@@ -161,11 +194,19 @@
 
 <div class="section-box">
 
-<h2>🖥️ Phase 5 - Wristband and PCB Design (Jacqueline Mayancela) </h2>
+<h2>🖥️ Phase 5 - Wristband and PCB Design (Jacqueline Mayancela)</h2>
 
-<p>Once the electronics and programming were validated, the PCB and the wristband housing were designed together to ensure compatibility between the electronic system and the physical prototype.</p>
+<p>
+After validating the electronic circuit and the program, the PCB and the wristband structure were designed according to the dimensions of the real components.
+</p>
 
-<p>The objective was to create a lightweight, ergonomic and compact structure capable of securely holding the PCB, battery, sensor and vibration motor.</p>
+<p>
+KiCad was used to design the PCB layout, organizing the connections between the XIAO ESP32-C3, the ultrasonic sensor, the vibration motor, resistors, connectors and power supply. The objective was to replace the temporary breadboard circuit with a compact and organized board.
+</p>
+
+<p>
+At the same time, the wristband case was designed considering the internal space required for the PCB, battery compartment, sensor opening and motor placement. The design focused on comfort, stability and easy assembly.
+</p>
 
 <div class="blog-image">
     <img src="../image/PCB_FP.png" >
@@ -181,18 +222,22 @@
 
 <div class="section-box">
 
-<h2>⚡ Phase 6 – PCB Manufacturing (Jacqueline Mayancela / Mateo Ledesma)</h2>
+<h2>⚡ Phase 6 – PCB Manufacturing (Jacqueline Mayancela)</h2>
 
 <p>
-The PCB manufacturing phase included the preparation and production of the printed circuit board. The circuit design was printed and transferred onto the copper board so that the electronic traces could be created accurately.
+The PCB manufacturing process began with the preparation of the circuit design created in KiCad. The final PCB file was exported and prepared for fabrication according to the required dimensions of the wristband.
 </p>
 
 <p>
-After printing, the board was drilled to create the necessary holes for the electronic components. This process required precision because every hole had to match the exact position of each component before soldering.
+A copper board was used as the base material for the printed circuit. The PCB outline was cut using a UV laser machine, allowing the board to match the required shape and size for the prototype.
 </p>
 
 <p>
-This phase transformed the temporary breadboard prototype into a compact, organized and permanent electronic circuit suitable for integration into the wearable device.
+After cutting, the board was drilled in the points where the electronic components had to be inserted. Drill bits were used carefully to create the holes for the connectors, microcontroller pins and sensor connections.
+</p>
+
+<p>
+This phase transformed the electronic design into a physical board, ready for soldering and integration into the final wearable prototype.
 </p>
 
 <div class="blog-image">
@@ -212,15 +257,19 @@ This phase transformed the temporary breadboard prototype into a compact, organi
 <h2>🔩 Phase 7 – Circuit Assembly and Soldering (Mateo Ledesma / Tabata Vega)</h2>
 
 <p>
-Once the PCB had been manufactured, all electronic components were placed and soldered according to the circuit design.
+Once the PCB was manufactured, the electronic components were placed on the board according to the circuit layout. The components included the XIAO ESP32-C3 microcontroller, HC-SR04 ultrasonic sensor connections, vibration motor, resistors, connectors and power lines.
 </p>
 
 <p>
-The ultrasonic sensor connections, vibration motor, resistors, microcontroller pins and power connections were assembled carefully to guarantee proper operation.
+A soldering iron and tin solder were used to attach each component to the PCB. Special care was taken to avoid excess solder, short circuits or weak joints that could affect the operation of the circuit.
 </p>
 
 <p>
-During this stage, continuity tests were performed to verify that no soldering defects, short circuits or loose connections were present before integrating the PCB into the wristband.
+After soldering, a multimeter was used to perform continuity tests and verify that the connections were correct. This step was necessary before installing the PCB inside the wristband case.
+</p>
+
+<p>
+Compared with the breadboard prototype, this assembled PCB provided a more stable, compact and reliable electronic system.
 </p>
 
 <p>
@@ -239,18 +288,22 @@ Compared with the breadboard prototype, this version provided a much more stable
 
 <div class="section-box">
 
-<h2>🖨️ Phase 8 – Wristband Printing and Physical Prototype (Karen León) </h2>
+<h2>🖨️ Phase 8 – Wristband Printing and Physical Prototype (Karen León)</h2>
 
 <p>
-The wristband enclosure was manufactured using 3D printing technology to create a customized structure capable of holding every electronic component securely.
+The physical structure of the wristband was manufactured using 3D printing. The case was designed to hold the PCB, rechargeable battery, vibration motor and ultrasonic sensor securely inside the prototype.
 </p>
 
 <p>
-The prototype was designed to provide comfort, stability and an ergonomic fit while maintaining enough internal space for the PCB, battery, vibration motor and ultrasonic sensor.
+Flexible TPU filament was used for the wristband section to improve comfort when worn on the wrist. Nylon and printed support pieces were also considered for parts that required greater resistance or stability.
 </p>
 
 <p>
-After printing, dimensional inspections were carried out to verify component placement and overall fitting. Minor adjustments were considered to improve comfort and guarantee proper obstacle detection.
+The model was printed using Prusa 3D printers. After printing, the pieces were checked to verify the fitting of the PCB holder, battery compartment, sensor opening and cover.
+</p>
+
+<p>
+This phase produced the physical body of the smart wristband, allowing the electronic system to be installed in a wearable and ergonomic structure.
 </p>
 
 <div class="blog-image">
@@ -269,15 +322,15 @@ After printing, dimensional inspections were carried out to verify component pla
 <h2>📊 Phase 9 – IoT Monitoring with Blynk (Mateo Ledesma / Jacqueline Mayancela)</h2>
 
 <p>
-To improve the capabilities of the smart wristband, an Internet of Things (IoT) monitoring system was implemented using the Blynk platform.
+To add IoT functionality to the prototype, the XIAO ESP32-C3 was connected to the Blynk platform through Wi-Fi. This allowed the system to send obstacle-distance data to a digital dashboard.
 </p>
 
 <p>
-The ESP32-C3 microcontroller transmitted obstacle-distance measurements through Wi-Fi, allowing real-time monitoring of the wristband from a mobile dashboard.
+The Blynk mobile dashboard was configured to display the distance values measured by the HC-SR04 ultrasonic sensor in real time. Graphs were also generated to observe how the distance changed during testing.
 </p>
 
 <p>
-The collected information generated graphs showing obstacle proximity throughout the day, providing valuable information for testing, performance evaluation and future product improvements.
+This phase made it possible to monitor the behavior of the wristband digitally, evaluate the performance of the sensor and collect information that could be used for future improvements of the device.
 </p>
 
 <div class="blog-image">
@@ -298,19 +351,19 @@ The collected information generated graphs showing obstacle proximity throughout
 <h2>✅ Phase 10 – Final Assembly and Testing (Mateo Ledesma / Tabata Vega)</h2>
 
 <p>
-During the final stage, every subsystem was integrated into a single functional prototype.
+During the final assembly phase, all the developed parts were integrated into a single functional prototype. The manufactured PCB was installed inside the 3D printed wristband case together with the ultrasonic sensor, vibration motor and rechargeable battery.
 </p>
 
 <p>
-The PCB was installed inside the wristband enclosure together with the ultrasonic sensor, vibration motor and power supply.
+The sensor was positioned at the front of the wristband to detect nearby obstacles, while the vibration motor was placed in a position where the user could clearly feel the alert.
 </p>
 
 <p>
-Several functional tests were performed to verify obstacle detection accuracy, vibration response distance and the correct operation of the IoT monitoring system through the Blynk application.
+Several functional tests were performed to verify the obstacle detection range, vibration response, electronic stability and correct data transmission to the Blynk platform.
 </p>
 
 <p>
-The prototype successfully fulfilled the project's main objective by detecting nearby obstacles and notifying the user through vibration feedback.
+The final prototype successfully detected nearby obstacles and notified the user through vibration feedback, fulfilling the main objective of the smart wristband project.
 </p>
 
 <div class="blog-image">
