@@ -13,6 +13,11 @@
 
 </head>
 
+<div id="imagePreview" class="image-preview">
+  <span class="close-preview">&times;</span>
+  <img id="previewImg" src="" alt="Image preview">
+</div>    
+    
 <body>
 
 <div class="navbar">
@@ -441,13 +446,41 @@ Your browser does not support HTML5 video.
 
 </div>
 <script>
-document.querySelectorAll('.dropdown > a').forEach(menu=>{
-menu.addEventListener('click',function(e){
-if(window.innerWidth<=768){
-e.preventDefault();
-this.parentElement.classList.toggle('active');
-}
+document.querySelectorAll('.dropdown > a').forEach(menu => {
+  menu.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('active');
+    }
+  });
 });
+
+/* Image preview */
+const imagePreview = document.getElementById('imagePreview');
+const previewImg = document.getElementById('previewImg');
+const closePreview = document.querySelector('.close-preview');
+
+document.querySelectorAll('.blog-image img').forEach(img => {
+  img.addEventListener('click', () => {
+    imagePreview.style.display = 'flex';
+    previewImg.src = img.src;
+  });
+});
+
+closePreview.addEventListener('click', () => {
+  imagePreview.style.display = 'none';
+});
+
+imagePreview.addEventListener('click', (e) => {
+  if (e.target === imagePreview) {
+    imagePreview.style.display = 'none';
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    imagePreview.style.display = 'none';
+  }
 });
 </script>
 
